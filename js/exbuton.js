@@ -40,9 +40,9 @@ $("#btn1").on('click',function(){
 						$("#title").val('');
 						$("#brand").val('');
 						$("#salesAmount").val('');
-						$("#launchTime").val('');
-						$("#selectYear").val('');
-						$("#confidential").val('');
+						$("#launchTime").val('Q1');
+						$("#selectYear").val('2011');
+						$("#confidential").val('Low');
 		dialog();
 	    render();
         
