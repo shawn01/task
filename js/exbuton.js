@@ -1,6 +1,7 @@
 var rows = [];
 var dialog = function(id){
 	$('#dialog-form').dialog({
+			modal : true ,
 			buttons : {
 			"Save" : function(){			
 				if ($('#dialog-form').valid()) {
