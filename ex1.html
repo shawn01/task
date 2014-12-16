@@ -5,10 +5,11 @@
 <link type="text/css" rel="stylesheet" href="mapaCSS/style.css"/>
 <link type="text/css" rel="stylesheet" href="mapaCSS/jquery-ui.min.css"/>
 
+
 <title>1st Desk</title>
 </head>
 <body>
-	<input type="button" id ="btn1" value="ADD Market Launch">
+    <input type="button" id ="btn1" value="ADD Market Launch">
 <body>
  <style>
 body { font-size: 82.5%; }
@@ -62,14 +63,26 @@ div#users-contain table td, div#users-contain table th { border: 1px solid #eee;
 <div id="users-contain" class="ui-widget">
 
 <table id="showData" style="broder:1px solid">
-<thead>
+<thead id = "table">
           <tr class="ui-widget-header ">
-              <th>ID</th>
-              <th>Title</th>
-              <th>Brand</th>
-              <th>Launch Timeframe</th>
-              <th>Est. Sales Potential (USD)</th>
-              <th>Est. Sales Potential (CHF)</th>
+              <th criteria="id">ID   <a href="#" style = "float: right"  class="asc"><span class="ui-icon ui-icon-arrowthick-1-n"></span></a>
+                                     <a href="#" style = "float: right"  class="desc"><span class="ui-icon ui-icon-arrowthick-1-s"></span></a>
+              </th>
+              <th criteria="title">Title  <a href="#" style = "float: right"  class="asc"><span class="ui-icon ui-icon-arrowthick-1-n"></span>
+                                          <a href="#" style = "float: right"  class="desc"><span class="ui-icon ui-icon-arrowthick-1-s"></span>
+              </th>
+              <th criteria="brand">Brand   <a href="#" style = "float: right"  class="asc"><span class="ui-icon ui-icon-arrowthick-1-n"></span>
+                                           <a href="#" style = "float: right"  class="desc"><span class="ui-icon ui-icon-arrowthick-1-s"></span>
+              </th>
+              <th criteria="selectYear">Launch Timeframe  <a href="#" style = "float: right"  class="asc"><span class="ui-icon ui-icon-arrowthick-1-n"></span>
+                                                          <a href="#" style = "float: right"  class="desc"><span class="ui-icon ui-icon-arrowthick-1-s"></span>
+              </th>
+              <th criteria="amount">Est. Sales Potential (USD)  <a href="#" style = "float: right"  class="asc"><span class="ui-icon ui-icon-arrowthick-1-n"></span>
+                                                                <a href="#" style = "float: right" class="desc"><span class="ui-icon ui-icon-arrowthick-1-s"></span>
+              </th>
+              <th criteria="chf">Est. Sales Potential (CHF) <a href="#" style = "float: right"  class="asc"><span class="ui-icon ui-icon-arrowthick-1-n"></span>
+                                                            <a href="#" style = "float: right" class="desc"><span class="ui-icon ui-icon-arrowthick-1-s"></span>
+              </th>
               <th>Status</th>
               <th>Actions</th>
           </tr>
@@ -136,7 +149,6 @@ $("#dialog-form").validate({
       number: true
     }
   }
-
 });
 </script>
   
